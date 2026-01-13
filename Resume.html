@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>E-Resume | Muhammad Sharhan</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        /* Body & Background */
+        body {
+            font-family: "Segoe UI", Arial, sans-serif;
+            background-image: url('background.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Navbar */
+        .navbar {
+            width: 100%;
+            padding: 15px 0;
+            background: linear-gradient(to right, #555, #D5C58A);
+            text-align: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+            z-index: 1000;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 22px;
+            font-weight: bold;
+            font-size: 15px;
+            letter-spacing: 1px;
+        }
+
+        .navbar a:hover {
+            color: #ffcc99;
+        }
+
+        /* Main Box */
+        .content-box {
+            width: 85%;
+            max-width: 900px;
+            background: rgba(255, 255, 255, 0.92);
+            margin: 160px auto 80px auto;
+            padding: 45px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+            text-align: center;
+        }
+
+        h1 {
+            color: #003366;
+            font-size: 46px;
+            margin-bottom: 5px;
+            letter-spacing: 3px;
+        }
+
+        .line {
+            width: 120px;
+            height: 4px;
+            background: #0059b3;
+            margin: 15px auto;
+            border-radius: 10px;
+        }
+
+        h2 {
+            font-size: 26px;
+            font-weight: normal;
+            color: #111;
+            margin-top: 10px;
+        }
+
+        .subtitle {
+            font-size: 16px;
+            color: #555;
+            margin-top: 8px;
+        }
+
+        .datetime {
+            margin-top: 35px;
+            padding: 15px 25px;
+            background: #f2f6ff;
+            border-radius: 10px;
+            display: inline-block;
+            font-size: 15px;
+            color: #333;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        footer {
+            width: 100%;
+            text-align: center;
+            padding: 18px 0;
+            background: rgba(0,0,0,0.65);
+            color: white;
+            font-size: 14px;
+            position: fixed;
+            bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+
+<div class="navbar">
+    <a href="Resume.html">HOME</a>
+    <a href="about myself.html">ABOUT MYSELF</a>
+    <a href="qualification.html">QUALIFICATION</a>
+    <a href="gallery.html">GALLERY</a>
+    <a href="video.html">VIDEOS</a>
+</div>
+
+
+<div class="content-box">
+    <h1>E-RESUME</h1>
+    <div class="line"></div>
+
+    <h2>MUHAMMAD SHARHAN BIN IZILARAB</h2>
+    <div class="subtitle">
+        Diploma in Information Science ( JSI110 )<br>
+        Universiti Teknologi MARA (UiTM)
+    </div>
+
+    <div class="datetime">
+        Date: <span id="date"></span> | Time: <span id="time"></span>
+    </div>
+</div>
+
+
+<footer>
+    © 2025 | Muhammad Sharhan bin Izilarab | E-Resume
+</footer>
+
+
+<script>
+function updateDateTime() {
+    const now = new Date();
+    document.getElementById("date").textContent = now.toLocaleDateString();
+    document.getElementById("time").textContent = now.toLocaleTimeString();
+}
+
+
+setInterval(updateDateTime, 1000);
+updateDateTime();
+</script>
+
+</body>
+</html>

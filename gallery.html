@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - E-Resume</title>
+    <style>
+        /* Body & Background */
+        body {
+            font-family: "Segoe UI", Arial, sans-serif;
+            background-image: url('background.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin: 0;
+            padding: 0;
+        }
+
+       /* Navbar */
+        .navbar {
+            width: 100%;
+            padding: 15px 0;
+            background: linear-gradient(to right, #555, #D5C58A);
+            text-align: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+        }
+
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 18px;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .navbar a:hover {
+            color: #ffcc99;
+        }
+
+        /* Content Box */
+        .content-box {
+            width: 85%;
+            max-width: 950px;
+            background: rgba(255,255,255,0.95);
+            margin: 160px auto 80px auto;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        }
+
+        h2 {
+            color: #333;
+            border-bottom: 2px solid #888;
+            padding-bottom: 6px;
+            margin-top: 30px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.7;
+            color: #444;
+        }
+
+        /* Gallery Grid */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .gallery-item {
+            background: #f4f4f4;
+            padding: 10px;
+            border-radius: 10px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        }
+
+        .caption {
+            margin-top: 8px;
+            font-size: 14px;
+            color: #333;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px 0;
+            background: rgba(60,60,60,0.85);
+            color: #ddd;
+            font-size: 14px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+
+<div class="navbar">
+    <a href="file:///C:/Users/User/OneDrive/Desktop/imd318%20(2)/Resume.html">HOME</a>
+    <a href="file:///C:/Users/User/OneDrive/Desktop/imd318%20(2)/about%20myself.html">ABOUT MYSELF</a>
+    <a href="file:///C:/Users/User/OneDrive/Desktop/imd318%20(2)/qualification.html">QUALIFICATION</a>
+    <a href="file:///C:/Users/User/OneDrive/Desktop/imd318%20(2)/gallery.html">GALLERY</a>
+    <a href="file:///C:/Users/User/OneDrive/Desktop/imd318%20(2)/video.html">VIDEOS</a>
+</div>
+
+
+<div class="content-box">
+    <h2>Campus Life</h2>
+    <p>As a diploma information science student, the images below provide a brief overview of the activities or events I have participated in during my time at UiTM.</p>
+
+    <div class="gallery-grid">
+        <div class="gallery-item">
+            <img src="president.jpg" alt="Experience in clubs">
+            <div class="caption">President of Entrepreneur Club for 2 semesters</div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="parliament.jpg" alt="Student Parliament">
+            <div class="caption">Joining Student Parliament at UiTM</div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="event.jpg" alt="Event Participation">
+            <div class="caption">Handled a big event</div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="farewell.jpg" alt="Farewell">
+            <div class="caption">Last speech as ex-President of Entrepreneur Club</div>
+        </div>
+    </div>
+</div>
+
+<div class="content-box">
+    <h2>Intern & Outreach Program</h2>
+    <p>The photos below showcase my participation in internship and outreach programs responsibilities.</p>
+
+    <div class="gallery-grid">
+        <div class="gallery-item">
+            <img src="intern.jpg" alt="Internship">
+            <div class="caption">My fellow interns and staff from Ibrahim Sultan Politeknik</div>
+        </div>
+		
+		<div class="gallery-item">
+            <img src="interns.jpg" alt="Internship">
+            <div class="caption">My fellow interns and I finish our task to make 68th independence day mini exhibition</div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="outreach.jpg" alt="Outreach Program">
+            <div class="caption">With my teammates at National Archive of Malaysia</div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="outreach 2.jpg" alt="Outreach Program">
+            <div class="caption">With my teammates at National Archive of Malaysia</div>
+        </div>
+    </div>
+</div>
+
+
+<footer>
+    © 2025 | Muhammad Sharhan bin Izilarab | E‑Resume
+</footer>
+
+</body>
+</html>
